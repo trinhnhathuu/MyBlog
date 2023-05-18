@@ -1,0 +1,59 @@
+{% extends "pages\base.html" %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="">
+    <div class="row my-4">
+        <div class="col-md-10">
+            <div class="contact-form">
+                <h1 class="text-black-300 add-letter-space mb-5">Lets contact me</h1>
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label for="firstName" class="text-black-300">Họ</label>
+                                <input type="text" id="firstName"
+                                    class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0"
+                                    placeholder="nhap ho" required>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label for="lastName" class="text-black-300">Tên</label>
+                                <input type="text" id="lastName"
+                                    class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0"
+                                    placeholder="nhap ten" required>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label for="email" class="text-black-300">E-Mail Address</label>
+                                <input type="email" id="email"
+                                    class="text-white-300 form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0"
+                                    placeholder="nhap email..." required>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-12">
+                            <div class="form-group mb-5">
+                                <label for="message" class="text-black-300">Your message</label>
+                                <textarea name="message"
+                                    class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0"
+                                    placeholder="Lorem Ipsum is simply dummy text of the printing and..."
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-sm btn-primary">Send Now <img
+                                    src="#" alt=""></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

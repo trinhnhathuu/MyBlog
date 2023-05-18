@@ -1,0 +1,136 @@
+* {
+  margin: 0 important;
+  padding: 0 important;
+
+}
+
+html,
+body {
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+}
+.avt_img {
+  margin-left: 15px;
+  height: 20px;
+  width: 20px;
+}
+.ti {
+  margin: auto;
+}
+.ti a {
+  text-decoration:none;
+}
+
+.mycontent{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.list-sidebar {
+  margin-right:5rem;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex:1;
+}
+
+.footer {
+  position:fixed;
+  bottom: 0;
+  left: 20px;
+  width: 100%;
+
+}
+
+/* tạo hiệu ứng title */
+.title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+h2 span {
+  transition: 0.6s;
+}
+
+h2:hover span:nth-child(1) {
+  margin-right: 10px;
+}
+
+h2:hover span:nth-child(2) {
+  margin-left: 10px;
+}
+h2:hover span:nth-child(3) {
+  display: none;
+}
+h2:hover span:nth-child(4) {
+  margin-left: 10px;
+}
+
+h2:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 160px #fff;
+}
+
+.list-sidebar li a {
+  color: #0b0b0b;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.6s;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.list-sidebar li {
+  margin-bottom: 20px;
+
+  height: 30px;
+}
+
+.icon-menu {
+  display: block;
+  color: #ffffff;
+}
+
+
+.link.active {
+  background-color: white;
+}
+
+
